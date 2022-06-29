@@ -8,6 +8,7 @@ const filtrados = ({data, eliminar, editar}) =>{
             <thead><tr><th>ID</th>
             <th>Nome</th>
             <th>Numero de Celular</th>
+            <th>Email</th>
             <th>Ações</th></tr></thead>
             <tbody>
             {data.map((elemento)=>(
@@ -15,6 +16,7 @@ const filtrados = ({data, eliminar, editar}) =>{
                 <td>{elemento.id}</td>
                 <td>{elemento.nombre}</td>
                 <td>{elemento.telefono}</td>
+                <td>{elemento.Email}</td>
                 <td><Button color="primary" onClick={() => editar(elemento)}>Editar</Button></td>
                 <td><Button color="danger" onClick={() => eliminar(elemento)}>Apagar</Button></td>
                 </tr>               

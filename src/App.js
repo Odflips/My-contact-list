@@ -5,9 +5,9 @@ import {Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter
 import Filtrados from './components/filtrados';
 
 const data = [ 
-  {id: 1, nombre: "Kevin Feliz", telefono: "20198682"},
-  {id: 2, nombre: "Huascar Mejia", telefono: "20198773"},
-  {id: 3, nombre: "Jairo Melo", telefono: "20198625"},
+  {id: 1, nombre: "Ivan Carreño", telefono: "55555555", Email:"ivan@email.com"},
+  {id: 2, nombre: "Alan brito", telefono: "30224564", Email:"alanbrito@email.com"},
+  {id: 3, nombre: "Rosa Meltrososki", telefono: "12930293", Email:"Rosa@email.com"},
 ];
 
 class App extends React.Component {
@@ -16,7 +16,8 @@ class App extends React.Component {
     form: {
       id: "",
       nombre: "",
-      telefono: ""
+      telefono: "",
+      Email: ""
     }, 
     dataSearch: [],
     modalInsertar: false,
@@ -84,6 +85,7 @@ class App extends React.Component {
       if(dato.id === registro.id){
         lista[contador].nombre = dato.nombre;
         lista[contador].telefono = dato.telefono;
+        lista[contador].Email = dato.Email;
       }
       contador++;
     });
@@ -159,6 +161,10 @@ class App extends React.Component {
               <label>Celular</label> 
               <input className="form-control" name="telefono" type= "text" onChange={this.handleChange}/>
             </FormGroup> 
+            <FormGroup>
+              <label>Email</label> 
+              <input className="form-control" name="Email" type= "text" onChange={this.handleChange}/>
+            </FormGroup>
           </ModalBody>
 
           <ModalFooter>
@@ -190,6 +196,11 @@ class App extends React.Component {
             <FormGroup>
               <label>Celular</label> 
               <input className="form-control" name="celular" type= "text" onChange={this.handleChange} value={this.state.form.telefono}/>
+            </FormGroup> 
+
+            <FormGroup>
+              <label>Email</label> 
+              <input className="form-control" name="Email" type= "text" onChange={this.handleChange} value={this.state.form.Email}/>
             </FormGroup> 
           </ModalBody>
 
