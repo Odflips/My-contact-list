@@ -117,7 +117,7 @@ class App extends React.Component {
   render() {  
     return (
       <>     
-        <nav className="navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-dark bg-warning">
           <div class="container-fluid">
             <a class="navbar-brand">Agenda de contatos</a>            
             <form  class="d-flex">
@@ -168,7 +168,7 @@ class App extends React.Component {
           </ModalBody>
 
           <ModalFooter>
-            <Button color="primary" onClick={() => this.insertar()}>Inserir</Button>
+            <Button color="primary" onClick={() => this.insertar()}>Salvar</Button>
             <Button color="danger" onClick={() => this.cerrarModalInsertar()}>Cancelar</Button>
           </ModalFooter>
         </Modal>
