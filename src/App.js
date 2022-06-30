@@ -5,9 +5,9 @@ import {Button, Container, Modal, ModalBody, ModalHeader, FormGroup, ModalFooter
 import Filtrados from './components/filtrados';
 
 const data = [ 
-  {id: 1, nombre: "Ivan Carreño", telefono: "55555555", Email:"ivan@email.com"},
+  {id: 1, nombre: "Carlos villagran", telefono: "55555555", Email:"ivan@email.com"},
   {id: 2, nombre: "Alan brito", telefono: "30224564", Email:"alanbrito@email.com"},
-  {id: 3, nombre: "Rosa Meltrososki", telefono: "12930293", Email:"Rosa@email.com"},
+  {id: 3, nombre: "Rosa Marin", telefono: "12930293", Email:"Rosa@email.com"},
 ];
 
 class App extends React.Component {
